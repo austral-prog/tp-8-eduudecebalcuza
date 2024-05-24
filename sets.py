@@ -6,6 +6,7 @@ def clean_ingredients(dish_name, dish_ingredients):
     return (dish_name, my_set)
 
 def check_drinks(drink_name, drink_ingredients):
+    my_set = set(drink_ingredients)
     for i in drink_ingredients:
         if i in ALCOHOLS:
             return f"{drink_name} Cocktail"
